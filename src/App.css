@@ -1,3 +1,15 @@
+body {
+  font-family: 'opensans';
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* for main body */
 .calculator-body {
   max-width: 400px;
   margin: auto;
@@ -6,6 +18,8 @@
 .calculator-body h1 {
   font-size: 42px;
 }
+
+/* for dashboard */
 .calculator-body .result-dashboard {
   padding: 10px;
   border: 1px solid #ccc;
@@ -15,19 +29,9 @@
   font-size: 36px;
 }
 
+/* for buttons */
 .calculator-body .calculator-button li {
   width: 100px;
   height: 100px;
-  border: 1px solid #eee;
-}
-
-.button {
-  display: block;
-  background-color: #bbb;
-}
-
-button {
-  width: 25%;
-  height: 60px;
-  font-size: 30px;
+  border: 1px solid #ccc;
 }
