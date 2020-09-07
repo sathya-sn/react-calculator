@@ -25,10 +25,12 @@ class App extends Component {
 
   _calculateValues() {
     try {
-      const valueResult = this.state.result
+      const valueResult = this.state.result.replace('-','').replace('+','').replace('*','').replace('/','');
       
+      const calculatedValue = valueResult.reduce((value1, value2) => {return value1 + value2});
+
       this.setState({
-          result: (eval(valueResult) || "" ) + ""
+        result: calculatedValue
       })
     } catch (err) {
       this.setState({
